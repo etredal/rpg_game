@@ -27,7 +27,6 @@ Each part-x is associated with approximately one episode, on youtube.
 ## Authors
 
 * **Etredal** - *Project Manager, Programmer*
-* **Eric** - *Programmer*
 
 ## Acknowledgments
 
