@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public string firstScene;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -14,7 +16,7 @@ public class GameController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Initialize")
         {
-            SceneManager.LoadScene("Forest-1");
+            SceneManager.LoadScene(firstScene);
         }
     }
 }
