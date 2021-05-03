@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Initialize.unity
+    guid: db83cb6bc38f3b8418e69310b4a1d9a7
+  - enabled: 1
+    path: Assets/Scenes/BattleView.unity
+    guid: 4e42ca1ffa0d4f74794ec0e49ce10503
   m_configObjects: {}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeroController : MonoBehaviour
 {
@@ -41,7 +42,33 @@ public class HeroController : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Enemy>() != null)
         {
-            // Start battle
+            // Disable Game Mechanics
+            Time.timeScale = 0;
+            FindObjectOfType<Camera>().GetComponent<AudioListener>().enabled = false;
+
+            // BattleView
+            SceneManager.LoadScene("BattleView", LoadSceneMode.Additive);
+            SceneManager.sceneLoaded += OnBattleViewStart;
         }
+    }
+
+    private void OnBattleViewStart(Scene scene, LoadSceneMode mode) {
+        SceneManager.sceneLoaded -= OnBattleViewStart;
+        StartCoroutine(BattleViewStart(scene));
+    }
+
+    private IEnumerator BattleViewStart(Scene scene)
+	{
+		while (scene.isLoaded == false)
+		{
+			yield return new WaitForEndOfFrame();
+		}
+
+        SceneManager.SetActiveScene(scene);
+
+        yield return new WaitForEndOfFrame();
+
+        GameObject blurPanel = GameObject.FindGameObjectWithTag("blurPanel");
+        blurPanel.GetComponent<Krivodeling.UI.Effects.UIBlur>().BeginBlur(5f);
     }
 }
