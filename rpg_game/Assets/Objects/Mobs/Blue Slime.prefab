@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5376257342066106097}
   - component: {fileID: 788542871}
   - component: {fileID: 788542870}
+  - component: {fileID: 5022015751097560690}
   - component: {fileID: 788542867}
   m_Layer: 0
   m_Name: Blue Slime
@@ -173,6 +174,18 @@ CircleCollider2D:
   m_Offset: {x: 0.0009274632, y: 0}
   serializedVersion: 2
   m_Radius: 0.035482332
+--- !u!114 &5022015751097560690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376257342066106098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2082e320d61a3da46952d5d3376248b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &788542867
 MonoBehaviour:
   m_ObjectHideFlags: 0
