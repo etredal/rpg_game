@@ -70,5 +70,12 @@ public class HeroController : MonoBehaviour
 
         GameObject blurPanel = GameObject.FindGameObjectWithTag("blurPanel");
         blurPanel.GetComponent<Krivodeling.UI.Effects.UIBlur>().BeginBlur(5f);
+
+        GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        mainCamera.SetActive(false);
+
+        GameObject battleviewCamera = GameObject.FindGameObjectWithTag("battleviewCamera");
+        battleviewCamera.SetActive(true);
+        battleviewCamera.transform.SetPositionAndRotation(mainCamera.transform.position, mainCamera.transform.rotation);
     }
 }

@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 108
+  controlID: 119
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1037
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 109
+  controlID: 120
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 110
+  controlID: 121
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -472,35 +472,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Utilities
+    - Assets/Game_Assets/Sprites/slime-itch-io
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Utilities
+  - Assets/Game_Assets/Sprites/slime-itch-io
   m_LastFoldersGridSize: 57
   m_LastProjectPath: D:\HDDCodeProjects\rpg_game_repo\rpg_game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 170}
-    m_SelectedIDs: 7c490000
-    m_LastClickedID: 18812
-    m_ExpandedIDs: 000000004449000046490000484900004a4900004c4900004e4900005049000000ca9a3b
+    scrollPos: {x: 0, y: 82}
+    m_SelectedIDs: a04a0000
+    m_LastClickedID: 19104
+    m_ExpandedIDs: 000000009a4900009c4900009e490000a0490000a2490000a4490000a649000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: tiles
+      m_OriginalName: tiles
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 18882
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -514,7 +514,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004449000046490000484900004a4900004c4900004e49000050490000
+    m_ExpandedIDs: 000000009a4900009c4900009e490000a0490000a2490000a4490000a6490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,8 +541,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000de570000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000de570000e44e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,7 +558,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -636,23 +636,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: c03a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: a8d6ffff52d8ffff38d9ffff7cdeffff56dfffff3ce2ffff66e3ffff10e4ffff10ebffff8eecffffa4edffffa4f0ffff44f1ffff54f2ffff3cf3ffffdcf3ffff2ef5ffffd8f5ffff7ef6ffff8ef7ffff9cf8ffff5afbffff7c3d0000923d0000525b0000685b0000c05c0000d65c0000f65c00000c5d0000625e0000785e0000985e0000ae5e0000245f0000046000001a600000746100008a6100004262000058620000766200008c620000d4640000f26400000c6500002a6500004a670000b2690000
+      m_ExpandedIDs: 508effff268fffff4e8fffffda8fffffac90ffff8e91ffff3292ffff6699ffffe29affff149bffffc09cffffa2abffff42adffff66afffff5eb2ffffd0b4ffffd8b5ffff1cb6ffffacb8ffffeab8ffff0cb9ffffacb9ffff28bbffffdebcffffe6bdffffd6befffff2c2ffffbac3ffffb6c4ffff78c5ffffd8c6ffff9ac7ffff9cc8ffff5ec9ffff96caffff0eccffff10cdffffd4cdffffd4d2ffffaed3ffff8ad4ffff6ad5ffff92d9ffff44e6ffff5af1ffff5afbffff8e4f00009c670000ae670000066c00007e6f0000906f000096710000a8710000ae730000c0730000c6750000d875000080770000ae780000c078000066790000aa7d00000480000016800000a8800000bc80000038810000848200000c860000148600001e8600003c8f0000448f0000a89100004a940000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: FlyingSlimeAttack_0
+        m_OriginalName: FlyingSlimeAttack_0
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 34344
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -698,9 +698,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 523.5504, y: 176.1882, z: -556.02264}
+    m_Target: {x: 0.0878137, y: -0.012890404, z: -18.475676}
     speed: 2
-    m_Value: {x: 523.5504, y: 176.1882, z: -556.02264}
+    m_Value: {x: 0.0878137, y: -0.012890404, z: -18.475676}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -751,9 +751,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 336.2337
+    m_Target: 0.86667633
     speed: 2
-    m_Value: 336.2337
+    m_Value: 0.86667633
   m_Ortho:
     m_Target: 1
     speed: 2
