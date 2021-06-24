@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.00039672852}
-  m_SizeDelta: {x: 6727.2266, y: 6594.4355}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0.00021362305}
+  m_SizeDelta: {x: 6098.756, y: 5979.715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274062148
 MonoBehaviour:
@@ -447,7 +447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: -252}
+  m_AnchoredPosition: {x: 0, y: -220}
   m_SizeDelta: {x: 393.305, y: 56.303986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971589122
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 1741862241}
   - component: {fileID: 1741862240}
   m_Layer: 5
-  m_Name: FlyingSlimeAttack_0
+  m_Name: UISlime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741862238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.2, y: 89, z: -16.790009}
+  m_LocalPosition: {x: 11.2, y: 63, z: -16.790009}
   m_LocalScale: {x: 2021.3584, y: 1843.1788, z: 1}
   m_Children: []
   m_Father: {fileID: 1655552337}
