@@ -9,11 +9,13 @@ public class HeroController : MonoBehaviour
     float moveSpeed = 0.8f;
     private Rigidbody2D body;
     private Animator animator;
+    private GameObject controller;
 
     void Awake() {
         sr = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        controller = GameObject.FindGameObjectWithTag("GameController");
     }
 
     void Update()
@@ -40,7 +42,8 @@ public class HeroController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<Enemy>() != null)
+        GameObject enemy = collision.gameObject; 
+        if (enemy.GetComponent<Enemy>() != null)
         {
             // Disable Game Mechanics
             Time.timeScale = 0;
@@ -49,6 +52,9 @@ public class HeroController : MonoBehaviour
             // BattleView
             SceneManager.LoadScene("BattleView", LoadSceneMode.Additive);
             SceneManager.sceneLoaded += OnBattleViewStart;
+
+            // Have GameController Populate BattleView with Enemy
+            controller.GetComponent<GameController>().BattleViewEnemyData(enemy.GetComponent<Enemy>().enemyData);
         }
     }
 

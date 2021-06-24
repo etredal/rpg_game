@@ -19,4 +19,9 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(firstScene);
         }
     }
+
+    public void BattleViewEnemyData(EnemyData enemyData)
+    {
+        Debug.Log(enemyData.EnemyName);
+    }
 }

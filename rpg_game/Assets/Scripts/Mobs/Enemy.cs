@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Generic Enemy
+    // Generic Enemy Data
+    public EnemyData enemyData;
 }
